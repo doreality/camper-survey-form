@@ -92,6 +92,10 @@ select {
   background-color: white;
 }
 
+textarea {
+  resize: none;
+}
+
 input[type="checkbox"],
 input[type="radio"] {
   width: unset;
