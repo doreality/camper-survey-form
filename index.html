@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>"Born To Fly" Movie Viewing Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">"Born To Fly" Movie Viewing Survey</h1>
+      <p id="description">
+        Kindly share your valuable feedback and reviews for the captivating film
+        "Born To Fly"!
+      </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <fieldset id="personal-information">
+          <legend>Personal Information</legend>
+          <label class="question" id="name-label" for="name">Name: </label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Wang Xiao"
+            required
+            autofocus
+          />
+          <label class="question" id="email-label" for="email">Email: </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="suo@bjyx.wx"
+            required
+          />
+          <label class="question" id="number-label" for="number">Age: </label>
+          <input
+            id="number"
+            name="age"
+            type="number"
+            min="18"
+            max="120"
+            placeholder="18"
+            required
+          />
+        </fieldset>
+        <fieldset id="movie-experience">
+          <legend>Movie Experience</legend>
+          <p class="question">
+            Give your overall rating for <em>"Born To Fly"</em>:
+          </p>
+          <label for="star-5"
+            ><input
+              id="star-5"
+              type="radio"
+              name="overall-rating"
+              value="star-5"
+              required
+            />
+            🌟🌟🌟🌟🌟</label
+          >
+
+          <label for="star-4"
+            ><input
+              id="star-4"
+              type="radio"
+              name="overall-rating"
+              value="star-4"
+            />
+            🌟🌟🌟🌟</label
+          >
+
+          <label for="star-3"
+            ><input
+              id="star-3"
+              type="radio"
+              name="overall-rating"
+              value="star-3"
+            />
+            🌟🌟🌟</label
+          >
+
+          <label for="star-2"
+            ><input
+              id="star-2"
+              type="radio"
+              name="overall-rating"
+              value="star-2"
+            />🌟🌟</label
+          >
+          <label for="star-1"
+            ><input
+              id="star-1"
+              type="radio"
+              name="overall-rating"
+              value="star-1"
+            />
+            🌟</label
+          >
+          <label class="question" for="movie-description"
+            >How would you describe the movie in one word?
+          </label>
+          <textarea
+            id="movie-description"
+            rows="8"
+            cols="50"
+            required
+          ></textarea>
+        </fieldset>
+
+        <fieldset id="stories-and-characters">
+          <legend>Stories and Characters</legend>
+          <p class="question">
+            How would you rate the storytelling of the movie?
+          </p>
+          <label for="sr-1"
+            ><input
+              id="sr-1"
+              class="radio-input"
+              type="radio"
+              name="story-rating"
+              value="sr-1"
+              required
+            />
+            Captivating</label
+          >
+          <label for="sr-2"
+            ><input
+              id="sr-2"
+              class="radio-input"
+              type="radio"
+              name="story-rating"
+              value="sr-2"
+            />
+            Engaging</label
+          >
+          <label for="sr-3"
+            ><input
+              id="sr-3"
+              class="radio-input"
+              type="radio"
+              name="story-rating"
+              value="sr-3"
+            />
+            Average</label
+          >
+          <label for="sr-4"
+            ><input
+              id="sr-4"
+              class="radio-input"
+              type="radio"
+              name="story-rating"
+              value="sr-4"
+            />
+            Disappointing</label
+          >
+          <label for="sr-5"
+            ><input
+              id="sr-5"
+              class="radio-input"
+              type="radio"
+              name="story-rating"
+              value="sr-5"
+            />
+            Boring</label
+          >
+          <label class="question" for="dropdown"
+            >Which character did you connect with <strong>the most</strong>?
+          </label>
+          <select id="dropdown">
+            <option value="">(Select one)</option>
+            <option value="1">Protagonist</option>
+            <option value="2">Antagonist</option>
+            <option value="3">Supporting Character</option>
+          </select>
+
+          <label class="question" for="plot"
+            >What were your <strong>favorite</strong> aspects of the plot?
+            <em>(Optional)</em>
+          </label>
+          <textarea
+            id="plot"
+            name="plot"
+            cols="50"
+            rows="8"
+            placeholder=""
+          ></textarea>
+        </fieldset>
+        <fieldset id="cinematography-and-visuals">
+          <legend>Cinematography and Visuals</legend>
+          <p class="question">
+            Please <strong>select</strong> the aspects you appreciated about the
+            cinematography and visuals:
+          </p>
+          <label for="visual-1"
+            ><input
+              id="visual-1"
+              name="visual-check"
+              type="checkbox"
+              value="visual-1"
+              required
+            />
+            Stunning visuals</label
+          >
+          <label for="visual-2"
+            ><input
+              id="visual-2"
+              name="visual-check"
+              type="checkbox"
+              value="visual-2"
+            />
+            Creative camera angles</label
+          >
+          <label for="visual-3"
+            ><input
+              id="visual-3"
+              name="visual-check"
+              type="checkbox"
+              value="visual-3"
+            />
+            Beautiful scenery</label
+          >
+          <label for="visual-4"
+            ><input
+              id="visual-4"
+              name="visual-check"
+              type="checkbox"
+              value="visual-4"
+            />
+            Impressive visual effects</label
+          >
+          <p class="question">How would you rate the visual effects?</p>
+          <label for="effect-1"
+            ><input
+              id="effect-1"
+              type="radio"
+              name="effect-radio"
+              value="effec-1"
+              required
+            />
+            Excellent</label
+          >
+          <label for="effect-2"
+            ><input
+              id="effect-2"
+              type="radio"
+              name="effect-radio"
+              value="effec-2"
+            />
+            Good</label
+          >
+          <label for="effect-3"
+            ><input
+              id="effect-3"
+              type="radio"
+              name="effect-radio"
+              value="effec-3"
+            />
+            Average</label
+          >
+          <label for="effect-4"
+            ><input
+              id="effect-4"
+              type="radio"
+              name="effect-radio"
+              value="effec-4"
+            />
+            Below Average</label
+          >
+          <label for="effect-5"
+            ><input
+              id="effect-5"
+              type="radio"
+              name="effect-radio"
+              value="effec-5"
+            />
+            Poor</label
+          >
+        </fieldset>
+        <fieldset id="recommendations">
+          <legend>Recommendation</legend>
+          <p class="question">Would you recommend "Born To Fly" to others?</p>
+          <label for="re-1"
+            ><input
+              id="re-1"
+              type="radio"
+              name="recommend-radio"
+              value="re-1"
+              required
+            />
+            Definitely</label
+          >
+          <label for="re-2"
+            ><input
+              id="re-2"
+              type="radio"
+              name="recommend-radio"
+              value="re-2"
+            />
+            Probably</label
+          >
+          <label for="re-3"
+            ><input
+              id="re-3"
+              type="radio"
+              name="recommend-radio"
+              value="re-3"
+            />
+            Not Sure</label
+          >
+          <label for="re-4"
+            ><input
+              id="re-4"
+              type="radio"
+              name="recommend-radio"
+              value="re-4"
+            />
+            Probably Not</label
+          >
+          <label for="re-5"
+            ><input
+              id="re-5"
+              type="radio"
+              name="recommend-radio"
+              value="re-5"
+            />
+            Definitely Not</label
+          >
+          <p class="question">
+            If you would recommend it, who would you recommend it to?
+          </p>
+
+          <label for="recheck-1"
+            ><input
+              id="recheck-1"
+              type="checkbox"
+              name="recommend-check"
+              value="recheck-1"
+            />
+            Friends</label
+          >
+          <label for="recheck-2"
+            ><input
+              id="recheck-2"
+              type="checkbox"
+              name="recommend-check"
+              value="recheck-2"
+            />
+            Family</label
+          >
+          <label for="recheck-3"
+            ><input
+              id="recheck-3"
+              type="checkbox"
+              name="recommend-check"
+              value="recheck-3"
+            />
+            Movie Buffs</label
+          >
+          <label for="recheck-4"
+            ><input
+              id="recheck-4"
+              type="checkbox"
+              name="recommend-check"
+              value="recheck-4"
+            />
+            Thriller Fans</label
+          >
+          <label for="recheck-5"
+            ><input
+              id="recheck-5"
+              type="checkbox"
+              name="recommend-check"
+              value="recheck-5"
+            />
+            Aviation Enthusiasts</label
+          >
+          <label for="recheck-6"
+            ><input
+              id="recheck-6"
+              type="checkbox"
+              name="recommend-check"
+              value="recheck-6"
+            />
+            Others</label
+          >
+        </fieldset>
+        <fieldset id="additional-comments">
+          <legend>Additional Comments</legend>
+          <label class="question" for="comment"
+            >Is there anything else you would like to share about the movie?
+            <em>(Optional)</em>
+          </label>
+          <textarea id="comment" name="comment" cols="50" rows="8"></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </main>
+    <footer>
+      <p class="footer">
+        Designed by <a href="https://github.com/doreality">doreality</a>
+      </p>
+      <p class="footer">No Rights Reserved</p>
+    </footer>
+  </body>
+</html>
